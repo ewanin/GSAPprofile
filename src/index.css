@@ -5,17 +5,17 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../public/fonts/gilroy/Gilroy-Regular.ttf");
+  src: url("./fonts/gilroy/Gilroy-Regular.ttf");
 }
 
 @font-face {
   font-family: "Mazius";
-  src: url("../public/fonts//MaziusDisplay/Mazius\ Display\ Regular.otf");
+  src: url("./fonts/MaziusDisplay/Mazius/Display/Regular.otf");
 }
 
 @font-face {
   font-family: "Agraham";
-  src: url("../public/fonts/agraham/Agraham.otf");
+  src: url("./fonts/agraham/Agraham.otf");
 }
 
 body {

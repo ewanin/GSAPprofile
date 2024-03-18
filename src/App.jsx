@@ -3,7 +3,23 @@ import gsap, { TweenMax, Power3 } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
+import logo from '../src/Images/logo.png'
+import enter from '../src/Images/enter.svg'
+import card1 from '../src/Images/card1.png'
+import card2 from '../src/Images/card2.png'
+import card3 from '../src/Images/card3.png'
+import rip from '../src/Images/rip.svg'
+import arrowR from '../src/Images/arrowR.svg'
+import arrowL from '../src/Images/arrowL.svg'
+import img1 from '../src/Images/img1.png'
+import img2 from '../src/Images/img2.png'
+import img3 from '../src/Images/img3.png'
+// import profile from '../src/Images/profile.png'
+
+
 const App = () => {
+
+
 
   const navGSAP = useRef(null);
   const creativeGSAP = useRef(null);
@@ -151,7 +167,7 @@ const App = () => {
     <div className=' overflow-hidden'>
 
       <div className=''>
-        <img src="./../public/Images/logo.png" alt="Not Available" className='w-[53px] h-[170px] left-0 mt-[20%] fixed' />
+        <img src={logo} alt="Not Available" className='w-[53px] h-[170px] left-0 mt-[20%] fixed' />
       </div>
 
       <div ref={navGSAP} className='underline underline-offset-2 text-primary text-[12px] font-medium uppercase w-full flex justify-between px-[5%] pt-[3%] font-gilroy fixed z-10'>
@@ -171,7 +187,7 @@ const App = () => {
 
       <div className='px-[5%] justify-between flex items-center -mt-[6%]'>
         <div className='flex w-full justify-between px-[2%] items-center'>
-          <img ref={logoGSAP} className='' src='../public/Images/enter.svg' alt='Not Available' />
+          <img ref={logoGSAP} className='' src={enter} alt='Not Available' />
           <div ref={visGSAP} className='text-[90px] font-agraham font-semibold italic text-secondary w-fit'>Visual</div>
         </div>
         <div ref={desGSAP} className='text-[202px] font-gilroy font-semibold text-primary w-fit'>Designer</div>
@@ -185,16 +201,15 @@ const App = () => {
             YET FUNCTIONAL & VISUALLY PLEASING INTERFACES FOR THE MOBILE AND WEB.</div>
         </div>
         <div className='flex ml-[20%]'>
-          <img ref={card1GSAP} src="../public/Images/card1.png" alt="Not Available" className='rounded-[30px] -rotate-9 -mr-[37%] ' />
-          <img ref={card2GSAP} src="../public/Images/card2.png" alt="Not Available" className='rounded-[30px] -rotate-3 -mr-[37%] mt-[12%] ' />
-          <img ref={card3GSAP} src="../public/Images/card3.png" alt="Not Available" className='rounded-[30px] rotate-1 mt-[18%]' />
+          <img ref={card1GSAP} src={card1} alt="Not Available" className='rounded-[30px] -rotate-9 -mr-[37%] ' />
+          <img ref={card2GSAP} src={card2} alt="Not Available" className='rounded-[30px] -rotate-3 -mr-[37%] mt-[12%] ' />
+          <img ref={card3GSAP} src={card3} alt="Not Available" className='rounded-[30px] rotate-1 mt-[18%]' />
         </div>
       </div>
-      <img src="./../public/Images/rip.svg" alt="Not Available" className='w-full -mt-[8%]' />
-
+      <img src={rip} alt="Not Available" className='w-full -mt-[8%]' />
 
       <div className="w-full bg-[#f2f2f2] -mt-[4%] px-[5%] ">
-        <img ref={arr1GSAP} src="./../public/Images/arrowR.svg" alt="Not Available" className='pt-[10%]' />
+        <img ref={arr1GSAP} src={arrowR} alt="Not Available" className='pt-[10%]' />
         <div ref={webGSAP} className='ml-[15%] py-[10%] border-b-2 border-tertiary border-opacity-50 '>
           <div className='text-[20px] text-[#414141] w-[240px] leading-[21px]'>WEB & MOBILE / UI&UX / BRANDING / FRONT-END DEVELOPMENT</div>
         </div>
@@ -206,55 +221,70 @@ const App = () => {
             <div className='text-[20px] tracking-normal ml-10 font-medium'>(05)</div>
           </div>
           <div>
-            <img src="./../public/Images/arrowL.svg" alt="Not Available" className='pt-[10%]' />
+            <img src={arrowL} alt="Not Available" className='pt-[10%]' />
           </div>
         </div>
 
 
         <div className='flex flex-wrap justify-evenly items-baseline'>
           <div ref={img1GSAP}>
-            <img src="./../public/Images/img1.png" alt="Not Available" className='w-[790px] h-[790px] rounded-[60px]' />
-            {/* <div className='flex gap-4 items-center -mt-[6%] ml-[2%] absolute'>
-              <div className='bg-white py-2 px-12 text-[#282828] font-gilroy text-[36px] font-semibold rounded-full'>Ae
-                <span className='text-[22px] italic font-agraham'>i</span>
-                zei</div>
-              <div className='bg-white p-4 h-fit rounded-full items-center'>
-                <img src="./../public/Images/arrowU.svg" alt="Not Available" />
-              </div>
-            </div> */}
+            <img src={img1} alt="Not Available" className='w-[790px] h-[790px] rounded-[60px]' />
           </div>
 
           <div>
             <div ref={img2GSAP}>
-              <img src="./../public/Images/img2.png" alt="Not Available" className='w-[450px] h-[450px] rounded-[60px]' />
-              {/* <div className='flex gap-4 items-center -mt-[6%] ml-[2%] absolute'>
-                <div className='bg-white py-2 px-12 text-[#282828] font-gilroy text-[36px] font-semibold rounded-full'>D
-                  <span className='text-[22px] italic font-agraham'>i</span>
-                  splay</div>
-                <div className='bg-white p-4 h-fit rounded-full items-center'>
-                  <img src="./../public/Images/arrowU.svg" alt="Not Available" />
-                </div>
-              </div> */}
+              <img src={img2} alt="Not Available" className='w-[450px] h-[450px] rounded-[60px]' />
             </div>
           </div>
 
           <div>
             <div ref={img3GSAP} className='mt-10'>
-              <img src="./../public/Images/img3.png" alt="Not Available" className='w-[750px] h-[750px] rounded-[60px]' />
-              {/* <div className='flex gap-4 items-center -mt-[6%] ml-[2%] absolute'>
-                <div className='bg-white py-2 px-12 text-[#282828] font-gilroy text-[36px] font-semibold rounded-full'>Q
-                  <span className='text-[22px] italic font-agraham'>u</span>
-                  aive</div>
-                <div className='bg-white p-4 h-fit rounded-full items-center'>
-                  <img src="./../public/Images/arrowU.svg" alt="Not Available" />
-                </div>
-              </div> */}
+              <img src={img3} alt="Not Available" className='w-[750px] h-[750px] rounded-[60px]' />
             </div>
           </div>
 
         </div>
 
+        {/* <div className='bg-yellow400 pb-[8%]'>
+          <div className=' text-right pr-[8%] py-[9%]'>
+            <div className='text-[12px] text-tertiary mb-4'>ARCHIVE</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>NORTH OF ZERO</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>PULSE</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>PHOTO FOLIO</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>SPRINGFLATS STAY</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>CHUU</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>STREY</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>ABUDEZO</div>
+            <div className='text-[20px] text-primary underline underline-offset-4 decoration-tertiary decoration-1'>2020 PORTFOLIO</div>
+          </div>
+          <div className=' py-4 text-[20px] text-[#414141] bg-white rounded-full pl-[45%] '>See Playbook</div>
+        </div> */}
+
       </div>
+
+
+      {/* <img src={rip} alt="Not Available" className='w-full -mt-[2%] rotate-180' />
+      <div className="justify-between flex items-baseline w-[60%] ml-[8%] mt-[10%]">
+        <div className='flex text-[140px] text-primary tracking-tighter items-baseline'>
+          <div>Ho<span className=' font-agraham text-[80px] text-secondary font-normal'>n</span>rs</div>
+        </div>
+        <div className=' font-gilroy text-tertiary text-[12px] w-[152px] uppercase h-fit'>CURRENTLY AVAILABLE <b><i>FOR</i></b> FREELANCE WORLDWIDE</div>
+      </div>
+      <img src={arrowR} alt="Not Available" className='mx-[5%]' /> */}
+
+
+
+      {/* <div className='w-full'>
+        <div className='w-[276px]'>
+          <div className=' font-gilroy text-[12px] text-tertiary'>FEATURED</div>
+          <div className='text-[25px] font-semibold text-[#414141] font-gilroy'>Interview with Wix Editor X</div>
+          <img src={profile} alt="Not Available" className='w-[276px] h-[200px] rounded-[20px]' />
+          <div className='text-[12px] font-gilroy text-tertiary font-semibold'>My journey of becoming a visual designer and my views on websites as a medium of expression.</div>
+        </div>
+        <div></div>
+      </div> */}
+
+
 
     </div>
   )

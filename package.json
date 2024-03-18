@@ -1,6 +1,7 @@
 {
   "name": "animation",
   "private": true,
+  "homepage": "https://demo.onpointinsights.us/react-poc/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
