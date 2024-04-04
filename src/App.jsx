@@ -171,7 +171,7 @@ const App = () => {
       </div>
 
       <div ref={navGSAP} className='underline underline-offset-2 text-primary text-[12px] font-medium uppercase w-full flex justify-between px-[5%] pt-[3%] font-gilroy fixed z-10'>
-        <div>Abhishek Jha</div>
+        <div>Ewanin</div>
         <div>Playbook</div>
         <div>Socials</div>
         <div>Contact</div>
@@ -195,7 +195,7 @@ const App = () => {
 
       <div className='flex px-[5%] mt-[10%] items-center justify-between'>
         <div ref={contGSAP} className='text-[30px] font-gilroy w-min text-primary leading-[35px] h-fit font-semibold'>
-          <div>I AM ABHISHEK JHA, I CREATE</div>
+          <div>I AM Ewanin, I CREATE</div>
           <div>
             <span className=' font-agraham text-[23px] text-secondary font-normal'>Unconventional </span>
             YET FUNCTIONAL & VISUALLY PLEASING INTERFACES FOR THE MOBILE AND WEB.</div>
